@@ -7,7 +7,7 @@ let battleGround = exports.BattleGround = plugin('Battle Ground', 'Information a
   BattleGround: null
 });
 
-battleGround.parse('DETAILS', function(evt) {
+battleGround.parse('replay.details', function(evt) {
   battleGround.values.BattleGround = evt.m_title;
 });
 
@@ -15,7 +15,7 @@ let heroes = exports.Heroes = plugin('Hero', 'Basic hero data', {
   Heroes: []
 });
 
-heroes.parse('TRACKER_EVENTS.NNet.Replay.Tracker.SUnitBornEvent', function(evt) {
+heroes.parse('NNet.Replay.Tracker.SUnitBornEvent', function(evt) {
   if (evt.m_unitTypeName.substring(0,4) == 'Hero') {
     let id = evt.m_unitTypeName.substring(4);
     let name = '';
@@ -43,7 +43,7 @@ heroes.parse('TRACKER_EVENTS.NNet.Replay.Tracker.SUnitBornEvent', function(evt) 
       unitTagRecycle: evt.m_unitTagRecycle,
     });
   }
-}).parse('TRACKER_EVENTS.NNet.Replay.Tracker.SScoreResultEvent', function(evt) {
+}).parse('NNet.Replay.Tracker.SScoreResultEvent', function(evt) {
   let stats = evt.m_instanceList;
   for (var s in stats) {
     let stat = stats[s];
@@ -60,7 +60,7 @@ heroes.parse('TRACKER_EVENTS.NNet.Replay.Tracker.SUnitBornEvent', function(evt) 
       }
     }
   }
-}).parse('DETAILS', function(details) {
+}).parse('replay.details', function(details) {
   for (var p in details.m_playerList) {
     let player = details.m_playerList[p];
 

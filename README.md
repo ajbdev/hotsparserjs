@@ -4,7 +4,7 @@ The goal of this project is to create a clean, well formatted data structure fro
 The top objectives of this parser are:
 - Keep the data structure relevant to actual game information and trim any internal technical information
 - Allow conditional parsing of specific data
-- Make it easy to extend the parser for more
+- Make it easy to extend the parser to more easily support doing any kind of data analysis
 
 
 ## Parser Plugins

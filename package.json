@@ -5,6 +5,7 @@
   "main": "app.js",
   "author": "",
   "license": "ISC",
+  "main": "index.js",
   "dependencies": {
     "deepmerge": "^0.2.10",
     "heroprotocoljs": "git+https://github.com/ajbdev/heroprotocoljs.git#537c1e9f69aa213078919069576b7bf4d591c832",

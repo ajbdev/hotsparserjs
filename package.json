@@ -1,11 +1,10 @@
 {
   "name": "hotsparserjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "author": "",
   "license": "ISC",
-  "main": "index.js",
   "dependencies": {
     "deepmerge": "^0.2.10",
     "heroprotocoljs": "git+https://github.com/ajbdev/heroprotocoljs.git#537c1e9f69aa213078919069576b7bf4d591c832",

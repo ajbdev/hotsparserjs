@@ -17,49 +17,49 @@ fired from the main loop.
 The parser fires the following events that can be intercepted by the plugin:
 - parse.start: Signals the start of parsing. Receives all decoded replay data as an argument
 - DETAILS: This passes along information decoded from the details portion of the replay
-- [EVENT_TYPE].[EVENT_NAME]: Events that are fired from the replay file (see below for examples)
+- [.[: Events that are fired from the replay file (see below for examples)
 - parse.end: Signals the end of parsing.
 
 
 ## Replay specific event data
 The following events are fired in the parsing loop:
- - TRACKER_EVENTS.NNet.Replay.Tracker.SPlayerSetupEvent
- - TRACKER_EVENTS.NNet.Replay.Tracker.SUnitBornEvent
- - TRACKER_EVENTS.NNet.Replay.Tracker.SUpgradeEvent
- - TRACKER_EVENTS.NNet.Replay.Tracker.SStatGameEvent
- - TRACKER_EVENTS.NNet.Replay.Tracker.SUnitDiedEvent
- - TRACKER_EVENTS.NNet.Replay.Tracker.SUnitPositionsEvent
- - TRACKER_EVENTS.NNet.Replay.Tracker.SUnitOwnerChangeEvent
- - TRACKER_EVENTS.NNet.Replay.Tracker.SUnitRevivedEvent
- - TRACKER_EVENTS.NNet.Replay.Tracker.SUnitTypeChangeEvent
- - TRACKER_EVENTS.NNet.Replay.Tracker.SScoreResultEvent
- - GAME_EVENTS.NNet.Game.SBankFileEvent
- - GAME_EVENTS.NNet.Game.SBankSectionEvent
- - GAME_EVENTS.NNet.Game.SBankKeyEvent
- - GAME_EVENTS.NNet.Game.SBankSignatureEvent
- - GAME_EVENTS.NNet.Game.SUserFinishedLoadingSyncEvent
- - GAME_EVENTS.NNet.Game.STriggerSoundLengthSyncEvent
- - GAME_EVENTS.NNet.Game.SUserOptionsEvent
- - GAME_EVENTS.NNet.Game.SCameraUpdateEvent
- - GAME_EVENTS.NNet.Game.SSelectionDeltaEvent
- - GAME_EVENTS.NNet.Game.SCmdEvent
- - GAME_EVENTS.NNet.Game.SCmdUpdateTargetPointEvent
- - GAME_EVENTS.NNet.Game.SCommandManagerStateEvent
- - GAME_EVENTS.NNet.Game.SCmdUpdateTargetUnitEvent
- - GAME_EVENTS.NNet.Game.SControlGroupUpdateEvent
- - GAME_EVENTS.NNet.Game.SHeroTalentTreeSelectedEvent
- - GAME_EVENTS.NNet.Game.STriggerTransmissionOffsetEvent
- - GAME_EVENTS.NNet.Game.STriggerTransmissionCompleteEvent
- - GAME_EVENTS.NNet.Game.STriggerDialogControlEvent
- - GAME_EVENTS.NNet.Game.STriggerSoundOffsetEvent
- - GAME_EVENTS.NNet.Game.SUnitClickEvent
- - GAME_EVENTS.NNet.Game.STriggerSoundtrackDoneEvent
- - GAME_EVENTS.NNet.Game.STriggerPingEvent
- - GAME_EVENTS.NNet.Game.STriggerCutsceneEndSceneFiredEvent
- - GAME_EVENTS.NNet.Game.SGameUserLeaveEvent
- - MESSAGE_EVENTS.NNet.Game.SLoadingProgressMessage
- - MESSAGE_EVENTS.NNet.Game.SPingMessage
- - MESSAGE_EVENTS.NNet.Game.SChatMessage
+ - NNet.Replay.Tracker.SPlayerSetupEvent
+ - NNet.Replay.Tracker.SUnitBornEvent
+ - NNet.Replay.Tracker.SUpgradeEvent
+ - NNet.Replay.Tracker.SStatGameEvent
+ - NNet.Replay.Tracker.SUnitDiedEvent
+ - NNet.Replay.Tracker.SUnitPositionsEvent
+ - NNet.Replay.Tracker.SUnitOwnerChangeEvent
+ - NNet.Replay.Tracker.SUnitRevivedEvent
+ - NNet.Replay.Tracker.SUnitTypeChangeEvent
+ - NNet.Replay.Tracker.SScoreResultEvent
+ - NNet.Game.SBankFileEvent
+ - NNet.Game.SBankSectionEvent
+ - NNet.Game.SBankKeyEvent
+ - NNet.Game.SBankSignatureEvent
+ - NNet.Game.SUserFinishedLoadingSyncEvent
+ - NNet.Game.STriggerSoundLengthSyncEvent
+ - NNet.Game.SUserOptionsEvent
+ - NNet.Game.SCameraUpdateEvent
+ - NNet.Game.SSelectionDeltaEvent
+ - NNet.Game.SCmdEvent
+ - NNet.Game.SCmdUpdateTargetPointEvent
+ - NNet.Game.SCommandManagerStateEvent
+ - NNet.Game.SCmdUpdateTargetUnitEvent
+ - NNet.Game.SControlGroupUpdateEvent
+ - NNet.Game.SHeroTalentTreeSelectedEvent
+ - NNet.Game.STriggerTransmissionOffsetEvent
+ - NNet.Game.STriggerTransmissionCompleteEvent
+ - NNet.Game.STriggerDialogControlEvent
+ - NNet.Game.STriggerSoundOffsetEvent
+ - NNet.Game.SUnitClickEvent
+ - NNet.Game.STriggerSoundtrackDoneEvent
+ - NNet.Game.STriggerPingEvent
+ - NNet.Game.STriggerCutsceneEndSceneFiredEvent
+ - NNet.Game.SGameUserLeaveEvent
+ - NNet.Game.SLoadingProgressMessage
+ - NNet.Game.SPingMessage
+ - NNet.Game.SChatMessage
 
 ## Extending the parser
 It's very easy to extend the parser to do any sort of analysis upon replays that you

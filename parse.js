@@ -1,6 +1,6 @@
 "use strict";
 let parser = require('./lib/parser').Parser;
-let plugins = require('./parsers');
+let plugins = require('./lib/plugins').plugins;
 
 var hotsParser = parser(process.argv[2]);
 

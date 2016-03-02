@@ -1,7 +1,7 @@
 {
   "name": "hotsparserjs",
   "version": "0.0.6",
-  "description": "",
+  "description": "Parser meaningful statistics for heroes of the storm",
   "main": "index.js",
   "author": "",
   "license": "ISC",
